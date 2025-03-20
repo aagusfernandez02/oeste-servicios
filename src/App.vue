@@ -2,6 +2,7 @@
 import Home from '@/components/Home.vue';
 import Servicios from '@/components/Servicios.vue';
 import Nosotros from '@/components/Nosotros.vue';
+import Contacto from '@/components/Contacto.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Nosotros from '@/components/Nosotros.vue';
     <Home />
     <Servicios />
     <Nosotros />
+    <Contacto />
   </main>
 </template>
 
