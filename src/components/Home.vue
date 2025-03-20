@@ -1,4 +1,8 @@
 <script setup>
+const link_whatsapp = 'https://api.whatsapp.com/send?phone=541165854725&text=Hola%20Guillermo%2C%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F%0ATe%20contacto%20a%20trav%C3%A9s%20de%20la%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20que%20te%20comuniques%20conmigo!';
+const openWhatsapp = () => {
+  window.open(link_whatsapp, '_blank');
+};
 </script>
 
 <template>
@@ -8,7 +12,7 @@
       <h1>Oeste servicios</h1>
       <h2>- Reparaciones, mantenimiento y auxilios -</h2>
     </div>
-    <v-btn prepend-icon="mdi mdi-whatsapp" variant="outlined">
+    <v-btn prepend-icon="mdi mdi-whatsapp" variant="outlined" @click="openWhatsapp">
       Contactanos
     </v-btn>
     <!-- <svg class="svg-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3000BE" fill-opacity="1" d="M0,160L34.3,160C68.6,160,137,160,206,149.3C274.3,139,343,117,411,122.7C480,128,549,160,617,176C685.7,192,754,192,823,170.7C891.4,149,960,107,1029,106.7C1097.1,107,1166,149,1234,160C1302.9,171,1371,149,1406,138.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg> -->
