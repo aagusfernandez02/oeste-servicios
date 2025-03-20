@@ -6,10 +6,24 @@
     font-family: 'Lato', sans-serif;
 }
 
+// Font weight
+$font-weight-lighter: 100;
+$font-weight-light: 300;
+$font-weight-normal: 500;
+$font-weight-bold: 900;
+
 // Colors
 $color-blue-1: #090C9B;
 $color-blue-2: #3066BE;
 $color-blue-3: #B4C5E3;
 $color-gray-1: #3B3745;
 $color-white: #FBFFF1;
+$color-black: #0E0E0E;
 
+.svg-wave {
+    &.color-blue-2 {
+        path {
+            fill: $color-blue-2;
+        }
+    }
+}

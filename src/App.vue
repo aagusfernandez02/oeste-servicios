@@ -1,10 +1,12 @@
 <script setup>
-import Home from './components/Home.vue';
+import Home from '@/components/Home.vue';
+import Servicios from '@/components/Servicios.vue';
 </script>
 
 <template>
   <main>
     <Home />
+    <Servicios />
   </main>
 </template>
 
