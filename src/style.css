@@ -1,0 +1,14 @@
+/* SweetAlert2 styles */
+
+.swal2-confirm {
+    background-color: #0E3A82 !important;
+    color: #fff !important;
+}
+.swal2-cancel {
+    color: #fff !important;
+}
+.swal2-actions {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
