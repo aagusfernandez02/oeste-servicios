@@ -12,3 +12,6 @@
     display: flex;
     justify-content: space-around;
 }
+.swal2-html-container {
+    padding: 0;
+}

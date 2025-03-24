@@ -1,5 +1,5 @@
 <script setup>
-import { VCarousel, VCarouselItem } from 'vuetify/components'
+import { VCarousel, VCarouselItem, VBtn } from 'vuetify/components'
 
 const props = defineProps({
     description: String,
@@ -12,18 +12,20 @@ console.log(props.images)
 <template>
     <div class="container">
         <p class="description">{{ props.description }}</p>
-        <v-carousel
-            hide-delimiter-background
-            cycle
-            prev-icon="mdi-chevron-left"
-            next-icon="mdi-chevron-right"
+        <v-carousel 
             v-if="props.images?.length > 0"
+            hide-delimiter-background 
+            height="45vh"
+            cycle 
         >
-            <v-carousel-item
-                v-for="img in props.images"
-                :src="img"
-                cover
-            ></v-carousel-item>
+            <template v-slot:prev="{ props }">
+                <v-btn icon="mdi-chevron-left" variant="text" @click="props.onClick" class="carouselControlBtn"></v-btn>
+            </template>
+            <template v-slot:next="{ props }">
+                <v-btn icon="mdi-chevron-right" variant="text" @click="props.onClick"
+                    class="carouselControlBtn"></v-btn>
+            </template>
+            <v-carousel-item v-for="img in props.images" :src="img" cover></v-carousel-item>
         </v-carousel>
     </div>
 </template>
@@ -34,10 +36,18 @@ console.log(props.images)
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 
     .description {
         font-weight: $font-weight-light;
+    }
+
+    .carouselControlBtn {
+        color: #fff;
+        background-color: rgba($color: #fff, $alpha: 0.1);
     }
 }
 </style>

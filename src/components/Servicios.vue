@@ -1,37 +1,38 @@
 <script setup>
-import Swal from 'sweetalert2';
 import Servicios_Card from './Servicios_Card.vue';
-import CarouselComponent from './CarouselComponent.vue';
-import { createApp } from 'vue';
 import ModalServicio from './ModalServicio.vue';
+import { createVuetify } from 'vuetify';
+import { createApp } from 'vue';
+import Swal from 'sweetalert2';
 
 // #region Imagenes
 import servicios_autoelevador1_img from '@/assets/images/Servicios/Autoelevador/autoelevador1.jpg';
 import servicios_autoelevador2_img from '@/assets/images/Servicios/Autoelevador/autoelevador2.jpg';
 import servicios_autoelevador3_img from '@/assets/images/Servicios/Autoelevador/autoelevador3.jpg';
-import { createVuetify } from 'vuetify';
 // #endregion
 const itemsServicios = [{
     title: "Remolques/Auxilios",
     icon: "mdi-tow-truck",
-    text: "Remolques y auxilios mecánicos, tanto para autos, motos, camionetas y camiones"
+    text: "Remolques y auxilios mecánicos, tanto para autos, motos, camionetas y camiones",
+    description: "Servicio de remolque y auxilio mecánico para vehículos utilitarios y cargas de hasta 12 toneladas."
 },{
     title: "Vehículos",
     subtitle: "Reparación y mantenimiento",
     icon: "mdi-car-back",
-    text: "Diagnóstico, reparación y mantenimiento a domicilio"
+    text: "Diagnóstico, reparación y mantenimiento a domicilio",
+    description: "Asistencia en el lugar, traslados, reparaciones preventivas y mantenimiento general de vehículos particulares."
 },{
     title: "Camiones",
     subtitle: "Reparación y mantenimiento",
     icon: "mdi-truck-outline",
     text: "Diagnóstico, reparación y mantenimiento de camiones y/o flotas a domicilio",
-    description: "Contamos con años de experiencia en mantenimiento y reparación de flotas de camiones.",
+    description: "Asistencia en el lugar, traslados, reparaciones preventivas y mantenimiento general de camiones, incluyendo la gestión de flotas para empresas.",
 },{
     title: "Autoelevadores",
     subtitle: "Mantenimiento preventivo",
     icon: "mdi-forklift",
     text: "Matenimiento preventivo, cambios de aciete, arreglos mecánicos",
-    description: "Mantenimiento preventivo, cambios de aceite, arreglos mecánicos. Nosotros nos transportamos a donde esté tu autoelevador.",
+    description: "Servicio preventivo en el lugar, incluyendo cambios de aceite, filtros y mantenimiento general.",
     images: [servicios_autoelevador1_img, servicios_autoelevador2_img, servicios_autoelevador3_img]
 }];
 
