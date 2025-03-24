@@ -6,9 +6,9 @@ import { createApp } from 'vue';
 import Swal from 'sweetalert2';
 
 // #region Imagenes
-import servicios_autoelevador1_img from '@/assets/images/Servicios/Autoelevador/autoelevador1.jpg';
-import servicios_autoelevador2_img from '@/assets/images/Servicios/Autoelevador/autoelevador2.jpg';
-import servicios_autoelevador3_img from '@/assets/images/Servicios/Autoelevador/autoelevador3.jpg';
+import servicios_autoelevador1_img from '/images/Servicios/Autoelevador/autoelevador1.jpg';
+import servicios_autoelevador2_img from '/images/Servicios/Autoelevador/autoelevador2.jpg';
+import servicios_autoelevador3_img from '/images/Servicios/Autoelevador/autoelevador3.jpg';
 // #endregion
 const itemsServicios = [{
     title: "Remolques/Auxilios",

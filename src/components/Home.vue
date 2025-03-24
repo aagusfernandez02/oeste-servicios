@@ -34,7 +34,7 @@ const openWhatsapp = () => {
   justify-content: space-around;
   align-items: center;
 
-  background-image: url("@/assets/images/Home/bg-image-1.jpg");
+  background-image: url("/images/Home/bg-image-1.jpg");
   background-size: cover;
 
   color: $color-white;
