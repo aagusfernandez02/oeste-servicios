@@ -12,26 +12,23 @@ import servicios_autoelevador3_img from '/images/Servicios/Autoelevador/autoelev
 // #endregion
 const itemsServicios = [{
     title: "Remolques/Auxilios",
+    subtitle: "Servicio de remolque y auxilio mecánico.",
     icon: "mdi-tow-truck",
-    text: "Remolques y auxilios mecánicos, tanto para autos, motos, camionetas y camiones",
     description: "Servicio de remolque y auxilio mecánico para vehículos utilitarios y cargas de hasta 12 toneladas."
 },{
     title: "Vehículos",
     subtitle: "Reparación y mantenimiento",
     icon: "mdi-car-back",
-    text: "Diagnóstico, reparación y mantenimiento a domicilio",
     description: "Asistencia en el lugar, traslados, reparaciones preventivas y mantenimiento general de vehículos particulares."
 },{
     title: "Camiones",
     subtitle: "Reparación y mantenimiento",
     icon: "mdi-truck-outline",
-    text: "Diagnóstico, reparación y mantenimiento de camiones y/o flotas a domicilio",
     description: "Asistencia en el lugar, traslados, reparaciones preventivas y mantenimiento general de camiones, incluyendo la gestión de flotas para empresas.",
 },{
     title: "Autoelevadores",
     subtitle: "Mantenimiento preventivo",
     icon: "mdi-forklift",
-    text: "Matenimiento preventivo, cambios de aciete, arreglos mecánicos",
     description: "Servicio preventivo en el lugar, incluyendo cambios de aceite, filtros y mantenimiento general.",
     images: [servicios_autoelevador1_img, servicios_autoelevador2_img, servicios_autoelevador3_img]
 }];
@@ -55,14 +52,14 @@ const handleClickServicio = (servicio) => {
             }
         }
     });
-}
+};
 </script>
 
 <template>
     <section id="serviciosSection">
         <div>
             <h3 class="title">Servicios</h3>
-            <p class="subtitle">Hace click en los servicios para ver más información y fotos de nuestros trabajos.</p>
+            <p class="subtitle">Hace <strong>click</strong> en los <strong>servicios</strong> para ver más <strong>información</strong> y fotos de nuestros trabajos.</p>
         </div>
         
         <div class="services-card-container">
@@ -110,6 +107,7 @@ const handleClickServicio = (servicio) => {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
+        cursor: pointer;
     }
 
     .svg-wave {
@@ -118,6 +116,34 @@ const handleClickServicio = (servicio) => {
         bottom: 0;
         left: 0;
         background-color: $color-white;
+    }
+}
+
+@media (min-width: 768px) {
+    #serviciosSection {
+        
+        padding-bottom: 10rem;
+        .title {
+            font-size: 2.5rem;
+        }
+    
+        .subtitle {
+            font-size: 1.5rem;
+        }
+    
+        .services-card-container {
+            width: 100%;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-rows: 1fr;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #serviciosSection {
+        .services-card-container {
+            width: 90%;
+        }
     }
 }
 </style>

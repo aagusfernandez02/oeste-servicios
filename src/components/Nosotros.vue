@@ -50,4 +50,25 @@
         background-color: $color-blue-2;
     }
 }
+@media (min-width: 768px) {
+    #nosotrosSection {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+        .title {
+            font-size: 2.5rem;
+        }
+    
+        .text {
+            font-size: 1.5rem;
+        }
+
+    }
+}
+
+@media (min-width: 1024px) { 
+    #nosotrosSection {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
 </style>

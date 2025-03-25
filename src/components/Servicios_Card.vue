@@ -44,4 +44,35 @@ const { item } = defineProps({
         font-size: 3rem;
     }
 }
+
+@media (min-width: 768px) {
+    .card {
+        .title {
+            font-size: 1.05rem;
+        }
+    
+        .subtitle {
+            font-size: .85rem;
+        }
+    
+        .icon {
+            font-size: 4rem;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .card {
+        .title {
+            font-size: 1.15rem;
+        }
+    
+        .subtitle {
+            font-size: 1rem;
+        }
+    
+        .icon {
+            font-size: 5rem;
+        }
+    }
+}
 </style>
